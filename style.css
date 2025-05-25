@@ -2,7 +2,6 @@ html{
 background-color: rgb(245, 231, 169);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Playpen+Sans+Deva:wght@100..800&display=swap');
 
 /* From Uiverse.io by Madflows */ 
 button {
@@ -75,7 +74,7 @@ button {
    }
   
 html {
-    font-family: "Playpen Sans Deva", cursive;
+    font-family: "Playpen Sans Deva", monospace;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
