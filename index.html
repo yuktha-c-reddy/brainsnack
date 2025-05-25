@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap"
+      rel="stylesheet"
+    />
+    <title>Brainrot</title>
+  </head>
+  <body>
+    <h1
+      style="
+        font-family: 'Dangrek', sans-serif;
+        font-size: 2.5rem;
+        color: #6b4226;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        animation: bounce 1.5s infinite;
+      "
+    >
+      Brainrot ❌ Brainsnacks ✔️
+    </h1>
+
+    <style>
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      "
+    >
+      <div style="flex: 1; min-width: 250px; padding: 10px">
+        <p
+          style="
+            font-family: 'Dangrek', sans-serif;
+            font-size: 1.2rem;
+            color: #4a4e69;
+            background: linear-gradient(135deg, #f7d9e3, #d4e4f7);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 10px;
+          "
+        >
+          Your brain’s just vibing, but it deserves better content than cat
+          memes and conspiracy reels. Stick around — we’ve got cooler things to
+          explore.
+        </p>
+        <p
+          style="
+            font-family: 'Dangrek', sans-serif;
+            font-size: 1.2rem;
+            color: #4a4e69;
+            background: linear-gradient(135deg, #c4f3d3, #efdddd);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+          "
+        >
+          I'm not here to fix you. Just helping your brain have a better time
+          online.
+        </p>
+      </div>
+      <div
+        style="
+          flex: 1;
+          min-width: 250px;
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+        "
+      >
+        <div
+          style="
+            width: 100%;
+            max-width: 300px;
+            position: relative;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+          "
+        >
+          <iframe
+            src="https://giphy.com/embed/ES4Vcv8zWfIt2"
+            width="100%"
+            height="100%"
+            style="position: absolute; top: 0; left: 0; border-radius: 25px"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <h2
+      style="
+        font-family: 'Dangrek', sans-serif;
+        color: #05541d;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      "
+    >
+      Brain Snacks & Breaks
+    </h2>
+    <p
+      style="
+        font-family: 'Playpen Sans Deva', cursive;
+        color: #191717;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding-left: 20px;
+        line-height: 1.6;
+      "
+    >
+      Here’s a bunch of low-effort, high-vibe stuff to feed your brain something
+      better than algorithm sludge. No, it’s not a productivity hack or
+      self-help nonsense. Just some fun, random things to keep your mind.
+    </p>
+    <div style="display: flex; justify-content: center; margin-top: 20px">
+      <button class="learn-more" onclick="showNextPoint()">Bite heree!</button>
+    </div>
+
+    <div
+      id="snack-point"
+      style="
+        margin-top: 20px;
+        padding: 15px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #eebecb);
+        color: rgb(15, 5, 1);
+        font-family: 'Dangrek', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    ></div>
+
+    <script>
+      const points = [
+        "",
+        "Google “what’s at the bottom of the ocean” and prepare to be humbled.",
+        "Make a playlist called “Songs I’d play if I was the main character.”",
+        "Draw a potato. Don’t explain why. Just do it.",
+        "Watch a video of someone restoring something old (Cleaning muddy carpets lol) — it’s weirdly satisfying.",
+        "Write a fake review for a product you don’t own. Bonus points if it’s dramatic.",
+      ];
+
+      let currentIndex = 0;
+
+      function showNextPoint() {
+        const pointElement = document.getElementById("snack-point");
+        pointElement.textContent = points[currentIndex];
+        currentIndex = (currentIndex + 1) % points.length;
+      }
+
+      // Initialize with the first point
+      showNextPoint();
+    </script>
+
+    <section
+      style="
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #d4e4f7;
+        border-radius: 8px;
+      "
+    >
+      <h3 style="font-family: 'Dangrek', sans-serif; color: #333">
+        🎧 What I Do To Avoid Rotting
+      </h3>
+      <p style="font-family: 'Dangrek', sans-serif; color: #191717">
+        Not about installing the Forest app or setting Instagram reminders every
+        15 minutes — that’s just extra stress.
+      </p>
+
+      <ul
+        style="
+          list-style-type: disc;
+          padding-left: 20px;
+          line-height: 1.6;
+          color: #555;
+        "
+      >
+        <li>
+          Clickity-clack with my mechanical keyboard — because nothing says “I’m
+          being productive” like the satisfying thock of keys. (Yes, I’m
+          basically on monkeytype.com.)
+        </li>
+        <li>
+          Mood lighting wizardry — got a color-changing light and I use blue to
+          focus, red when I’m officially brainrotting in bed, and pink just to
+          feel cute AF.
+        </li>
+        <li>
+          I start with a one-minute plank, but somehow it turns into a full
+          30-minute Pilates session — go figure.
+        </li>
+      </ul>
+    </section>
+
+    <section
+      style="
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f7f3e9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h3 style="font-family: 'Dangrek', sans-serif; color: #333">
+        🌟 New Stuff I’m Adding
+      </h3>
+      <p style="font-family: 'Dangrek', sans-serif; color: #191717">
+        This site’s a little chaotic — so here’s what I’m working on to (If I'm
+        not on insta):
+      </p>
+      <ul
+        style="
+          list-style-type: disc;
+          padding-left: 20px;
+          line-height: 1.6;
+          color: #555;
+        "
+      >
+        <li>
+          🧠 Vibe Check Quiz – Answer a few fun questions and get a custom list
+          of anti-brainrot activities.
+        </li>
+        <li>
+          🧩 Mini Games & Tools – From useless sliders to calming sand
+          simulations, just cool stuff to mess around with.
+        </li>
+        <li>
+          📺 More oddly satisfying videos – Because apparently watching someone
+          clean a rusty knife is therapy now.
+        </li>
+        <li>
+          🎨 Creative prompts – For when your brain wants to make things instead
+          of scroll.
+        </li>
+      </ul>
+      <p style="font-family: 'Dangrek', sans-serif; color: #191717">
+        💌 Got something weird, fun, or kinda genius? Send it my way →
+        <a
+          href="mailto:yuktha.creddy@gmail.com"
+          style="color: #05541d; text-decoration: underline; font-weight: bold"
+          >yuktha.creddy@gmail.com</a
+        >
+      </p>
+    </section>
+    <section
+      style="
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #dddaee;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h3 style="font-family: 'Dangrek', sans-serif; color: #333">
+        💭 Why I Made This
+      </h3>
+      <p
+        style="
+          font-family: 'Dangrek', sans-serif;
+          color: #191717;
+          line-height: 1.6;
+        "
+      >
+        Lately, I’ve been experiencing a whole lot of brainrot — the kind where
+        you scroll for hours and then stare at the wall wondering what day it
+        is.
+      </p>
+      <p
+        style="
+          font-family: 'Dangrek', sans-serif;
+          color: #191717;
+          line-height: 1.6;
+        "
+      >
+        It’s also been way too long since I coded for fun on random nights, just
+        for the joy of building something dumb and delightful.
+      </p>
+      <p
+        style="
+          font-family: 'Dangrek', sans-serif;
+          color: #191717;
+          line-height: 1.6;
+        "
+      >
+        So this site is me fighting back, one clicky keyboard session at a time.
+      </p>
+    </section>
+  </body>
+</html>
